@@ -1,0 +1,48 @@
+/*------HEADER------*/
+header {
+    background-color: black;
+}
+/**------BOOTSTRAP NAVBAR---------*/
+header{
+    nav{
+        div{
+            a{
+                img{
+                    width: px;
+                    height: 120px;
+                }
+            }
+            button{
+                .navbar-toggler-icon {
+                    width: 35px;
+                    height: 35px;
+                    background-color: rgb(185, 185, 185);
+                    border: 1px solid white;
+                    border-radius: 5px;
+                }
+            }
+            div{
+                ul{
+                    .nav-link{
+                        color: white;
+                        text-align: center;
+                        padding: 5px;
+                        &:hover{
+                            color: rgb(114, 114, 114);
+                        }
+                        &:active{
+                            color: rgba(216, 112, 112, 0.644);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .boton-header {
+        padding: 5px;
+        background-color: rgb(78, 78, 78);
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+}

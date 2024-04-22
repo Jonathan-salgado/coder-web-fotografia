@@ -1,0 +1,33 @@
+/**----------FOOTER----------*/
+
+footer{
+    text-align: center;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    div{
+        display: inline-block;
+        img{
+            width: 120px;
+        }
+    }
+    div{
+        display: inline-block;
+        ul{
+            display: inline-block;
+            list-style: none;
+            li{
+                font-size: 10px;
+                margin: 5%;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+    .redes img {
+        width: 60px;
+    }
+}

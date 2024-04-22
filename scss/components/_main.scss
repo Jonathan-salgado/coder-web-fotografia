@@ -1,0 +1,87 @@
+
+/**--------MAIN INDEX--------*/
+main{
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    .hero{
+        width: 100%;
+        height: 500px;
+        background-image: url(../img/laura-herrera-camaro-puerta.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: left;
+        div{
+            margin: 80px;
+            width: 40%;
+            h1{
+                font-size: 50px;
+                color: white;
+            }
+            p{
+                color: white;
+                padding: 20px;
+                text-align: justify
+            }
+            a{
+                font-size: 20px;
+                background-color: rgb(61, 61, 61);
+                text-decoration: none;
+                color: white;
+                padding: 10px 50px 10px 50px;
+                display: inline-block;
+                border-radius: 20px;
+            }
+        }
+    }
+    .servicios-main{
+        h2{
+            background-color: rgb(61, 61, 61);
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
+        .servicios-tarjetas{
+            margin-top: 40px;
+            padding-bottom: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            div{
+                width: 250;
+                height: 350;
+                text-align: center;
+                margin: 10px;
+                padding: 15px;
+                display: inline-block;
+                h4{
+                    color: rgb(94, 7, 7);
+                    margin: 0px;
+                    padding: 0;
+                }
+                h5{
+                    font-size: 14px;
+                    text-align: center;
+                    color: rgb(0, 0, 0);
+                    margin: 0;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+
+/**-------BOTON FLOTANTE------*/
+
+.fixed{
+    a{
+        img{
+            width: 80px;
+            position: fixed;
+            justify-content: space-around;
+            bottom: 80px;
+            right: 20px;
+        }
+    }
+}
