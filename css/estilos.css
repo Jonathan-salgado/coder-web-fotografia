@@ -7,6 +7,20 @@
 font {
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
+/*PARA LLAMAR ES IGUAL AL CREADO
+($color-boton;)*/
+/* PARA HACER EL LLAMADO (map-get)
+
+.boton{
+    background-color: map-get($boton, bg-boton);
+}*/
+/* LLAMADO (@extend %flex-center;
+
+.galeria{
+    background-color: grey;
+    border: solid 2px black;
+    @extend %flex-center;
+}*/
 /*------HEADER------*/
 header {
   background-color: black; }
@@ -39,7 +53,6 @@ header .boton-header {
   border: 1px solid white;
   border-radius: 5px; }
 
-/**--------MAIN INDEX--------*/
 main {
   background-color: #161616;
   width: 100%; }
@@ -64,7 +77,7 @@ main {
         text-align: justify; }
       main .hero div a {
         font-size: 20px;
-        background-color: #3d3d3d;
+        background-color: rgba(87, 87, 87, 0.747);
         text-decoration: none;
         color: white;
         padding: 10px 50px 10px 50px;
@@ -86,26 +99,129 @@ main {
       height: 350;
       text-align: center;
       margin: 10px;
-      padding: 15px;
+      padding: 5px;
       display: inline-block; }
       main .servicios-main .servicios-tarjetas div h4 {
         color: #5e0707;
-        margin: 0px;
+        font-size: 22px;
+        margin-top: 10px;
         padding: 0; }
       main .servicios-main .servicios-tarjetas div h5 {
         font-size: 14px;
-        text-align: center;
+        text-align: justify;
         color: black;
-        margin: 0;
-        padding: 5px; }
+        margin-top: 10px;
+        padding: 0;
+        align-items: center; }
+  main .servicios-main .card-body {
+    padding: 0; }
+    main .servicios-main .card-body .btn-primary {
+      background-color: rgba(87, 87, 87, 0.747);
+      border: none; }
 
-/**-------BOTON FLOTANTE------*/
+.sobre-mi {
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .sobre-mi div {
+    width: 40%;
+    padding: 30px;
+    margin: 30px; }
+    .sobre-mi div img {
+      width: 300px;
+      padding: 5px;
+      border-radius: 15px; }
+
+main .trabajos {
+  padding: 30px; }
+  main .trabajos h2 {
+    margin-left: 20px;
+    color: white;
+    display: inline-block; }
+  main .trabajos p {
+    color: white;
+    margin: 25px;
+    text-align: justify; }
+  main .trabajos .grid-trabajos {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 320px;
+    gap: 6px; }
+    main .trabajos .grid-trabajos div img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+    main .trabajos .grid-trabajos .img-1 {
+      grid-row: span 2; }
+    main .trabajos .grid-trabajos .img-3 {
+      grid-column: span 2; }
+    main .trabajos .grid-trabajos .img-6 {
+      grid-row: span 2; }
+    main .trabajos .grid-trabajos .img-11 {
+      grid-column: span 2; }
+
+.servicios-main P {
+  color: white;
+  text-align: justify;
+  margin: 30px 60px 30px 60px; }
+
+.bodas {
+  width: 100%;
+  height: 600px;
+  margin-top: 50px;
+  background-image: url(../img/novia-en-el-agua-catalina-tobon.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column; }
+  .bodas p {
+    color: #323232;
+    margin: 30px 0px 0px 30px;
+    width: 35%;
+    font-size: 16px; }
+  .bodas a {
+    background-color: rgba(87, 87, 87, 0.747);
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 15px;
+    margin: 20px 0px 0px 30px;
+    display: inline-block; }
+
+.modelos {
+  width: 100%;
+  height: 650px;
+  background-image: url(../img/trabajos01.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column; }
+  .modelos p {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.11);
+    margin: 15px 0px 0px 30px;
+    width: 30%;
+    padding: 2px;
+    font-size: 15px; }
+  .modelos a {
+    background-color: rgba(87, 87, 87, 0.747);
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 15px;
+    margin: 10px 0px 0px 30px;
+    display: inline-block; }
+
 .fixed a img {
   width: 80px;
   position: fixed;
   justify-content: space-around;
   bottom: 80px;
-  right: 20px; }
+  right: 15px; }
 
 /**----------FOOTER----------*/
 footer {

@@ -10,3 +10,40 @@
 font{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+//!---- VARIABLES----//
+
+$color-boton: rgba(87, 87, 87, 0.747);
+$color-texto: white;
+$size-parraf:16px;
+/*PARA LLAMAR ES IGUAL AL CREADO
+($color-boton;)*/
+
+//!----MAPAS-----///
+
+$boton:(
+    bg-boton:#505050bb,
+    borde-boton:2px solid black,
+    color-text:white,
+);
+
+/* PARA HACER EL LLAMADO (map-get)
+
+.boton{
+    background-color: map-get($boton, bg-boton);
+}*/
+
+//! -----EXTENDS-----//
+
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* LLAMADO (@extend %flex-center;
+
+.galeria{
+    background-color: grey;
+    border: solid 2px black;
+    @extend %flex-center;
+}*/

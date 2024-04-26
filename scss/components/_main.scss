@@ -1,5 +1,5 @@
 
-/**--------MAIN INDEX--------*/
+//!--------MAIN INDEX--------*/
 main{
     background-color: rgb(22, 22, 22);
     width: 100%;
@@ -26,7 +26,7 @@ main{
             }
             a{
                 font-size: 20px;
-                background-color: rgb(61, 61, 61);
+                background-color: $color-boton;
                 text-decoration: none;
                 color: white;
                 padding: 10px 50px 10px 50px;
@@ -53,26 +53,159 @@ main{
                 height: 350;
                 text-align: center;
                 margin: 10px;
-                padding: 15px;
+                padding: 5px;
                 display: inline-block;
                 h4{
                     color: rgb(94, 7, 7);
-                    margin: 0px;
+                    font-size: 22px;
+                    margin-top: 10px;
                     padding: 0;
                 }
                 h5{
                     font-size: 14px;
-                    text-align: center;
+                    text-align: justify;
                     color: rgb(0, 0, 0);
-                    margin: 0;
-                    padding: 5px;
+                    margin-top: 10px;
+                    padding: 0;
+                    align-items: center;
                 }
+            }
+        }
+        .card-body{
+            padding: 0;
+            .btn-primary{
+                background-color:$color-boton;
+                border: none;
             }
         }
     }
 }
 
-/**-------BOTON FLOTANTE------*/
+//*!-----SOBRE-MI------*/
+.sobre-mi{
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    div{
+        width: 40%;
+        padding: 30px;
+        margin: 30px;
+        img{
+            width: 300px;
+            padding: 5px;
+            border-radius: 15px;
+        }
+    }
+}
+
+//!-------TRABAJOS------//
+
+main{
+    .trabajos{
+        padding: 30px;
+        h2{
+            margin-left: 20px;
+            color: $color-texto;
+            display: inline-block;
+        }
+        p{
+            color: $color-texto;
+            margin: 25px;
+            text-align: justify
+        }
+        .grid-trabajos{
+            margin: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-auto-rows: 320px;
+            gap: 6px;
+            div{
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .img-1 {
+                grid-row: span 2;
+            }
+            .img-3 {
+                grid-column: span 2;
+            }
+            .img-6 {
+                grid-row: span 2;
+            }
+            .img-11 {
+                grid-column: span 2;
+            }
+        }
+    }
+}
+
+//!-------SERVICIOS------//
+
+.servicios-main{
+    P{
+        color: white;
+        text-align: justify;
+        margin: 30px 60px 30px 60px
+    }
+}
+.bodas{
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+    background-image: url(../img/novia-en-el-agua-catalina-tobon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    p{
+        color:rgb(50, 50, 50);
+        margin: 30px 0px 0px 30px;
+        width: 35%;
+        font-size: 16px;
+    }
+    a{
+        background-color: $color-boton;
+        text-decoration: none;
+        color: white;
+        padding: 10px 30px 10px 30px;
+        border-radius: 15px;
+        margin: 20px 0px 0px 30px;
+        display: inline-block;
+    }
+}
+.modelos{
+    width: 100%;
+    height: 650px;
+    background-image: url(../img/trabajos01.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    p{
+        color:rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.11);
+        margin: 15px 0px 0px 30px;
+        width: 30%;
+        padding: 2px;
+        font-size: 15px;
+    }
+    a{
+        background-color: $color-boton;
+        text-decoration: none;
+        color: white;
+        padding: 10px 30px 10px 30px;
+        border-radius: 15px;
+        margin: 10px 0px 0px 30px;
+        display: inline-block;
+    }
+}
+//**-------BOTON FLOTANTE------*/
 
 .fixed{
     a{
@@ -81,7 +214,7 @@ main{
             position: fixed;
             justify-content: space-around;
             bottom: 80px;
-            right: 20px;
+            right: 15px;
         }
     }
 }
