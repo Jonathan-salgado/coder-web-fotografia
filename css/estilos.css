@@ -126,16 +126,16 @@ main {
       background-color: rgba(87, 87, 87, 0.747);
       border: none; }
 
-.sobre-mi {
+main .sobre-mi {
   color: white;
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
-  .sobre-mi div {
+  main .sobre-mi div {
     width: 40%;
     padding: 30px;
     margin: 30px; }
-    .sobre-mi div img {
+    main .sobre-mi div img {
       width: 300px;
       padding: 5px;
       border-radius: 15px; }
@@ -169,12 +169,12 @@ main .trabajos {
     main .trabajos .grid-trabajos .img-11 {
       grid-column: span 2; }
 
-.servicios-main P {
+main .servicios-main P {
   color: white;
   text-align: justify;
   margin: 30px 60px 30px 60px; }
 
-.bodas {
+main .bodas {
   width: 100%;
   height: 600px;
   margin-top: 50px;
@@ -184,12 +184,12 @@ main .trabajos {
   background-size: cover;
   display: flex;
   flex-direction: column; }
-  .bodas p {
+  main .bodas p {
     color: #323232;
     margin: 30px 0px 0px 30px;
     width: 35%;
     font-size: 16px; }
-  .bodas a {
+  main .bodas a {
     background-color: rgba(87, 87, 87, 0.747);
     text-decoration: none;
     color: white;
@@ -198,7 +198,7 @@ main .trabajos {
     margin: 20px 0px 0px 30px;
     display: inline-block; }
 
-.modelos {
+main .modelos {
   width: 100%;
   height: 650px;
   background-image: url(../img/trabajos01.jpg);
@@ -207,14 +207,14 @@ main .trabajos {
   background-size: cover;
   display: flex;
   flex-direction: column; }
-  .modelos p {
+  main .modelos p {
     color: white;
     background-color: rgba(0, 0, 0, 0.11);
     margin: 15px 0px 0px 30px;
     width: 30%;
     padding: 2px;
     font-size: 15px; }
-  .modelos a {
+  main .modelos a {
     background-color: rgba(87, 87, 87, 0.747);
     text-decoration: none;
     color: white;
@@ -222,6 +222,107 @@ main .trabajos {
     border-radius: 15px;
     margin: 10px 0px 0px 30px;
     display: inline-block; }
+
+main .container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  padding: 20px;
+  gap: 10px;
+  width: 1000px; }
+
+main .box-info {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 50px; }
+
+main .box-info > h1 {
+  text-align: left;
+  letter-spacing: 5px; }
+
+main .data {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; }
+
+main .data > p {
+  font-size: 1rem; }
+
+main .data > p > i {
+  color: #ac9010;
+  margin-right: 10px;
+  font-size: 25px; }
+
+main form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px; }
+
+main .input-box {
+  position: relative; }
+
+main .input-box > input {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.089);
+  border: 3px solid transparent;
+  letter-spacing: 1px;
+  transition: .3s;
+  color: #fff; }
+
+main .input-box > input::placeholder,
+main .input-box > textarea::placeholder {
+  color: #a3a3a3; }
+
+main .input-box > input:focus::placeholder,
+main .input-box > textarea:focus::placeholder {
+  color: transparent; }
+
+main .input-box > input:focus,
+main .input-box > textarea:focus {
+  border-bottom: 3px solid #ac9010;
+  animation: shake .2s; }
+
+main .input-box > textarea {
+  width: 100%;
+  height: 130px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.075);
+  border: 3px solid transparent;
+  letter-spacing: 1px;
+  outline: none;
+  transition: .3s;
+  color: #fff;
+  letter-spacing: 1.5px; }
+
+main .input-box > i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  color: rgba(255, 255, 255, 0.267);
+  transition: .3s; }
+
+main .input-box > input:focus ~ i {
+  color: #ac9010; }
+
+main form > button {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  background: rgba(94, 90, 37, 0.973);
+  color: #fff;
+  border: none;
+  transition: .1s;
+  cursor: pointer;
+  font-size: 1rem; }
+
+main form > button:hover,
+main .links > a:hover {
+  background: #ac9010; }
 
 .fixed a img {
   width: 80px;
@@ -254,3 +355,182 @@ footer {
           color: white; }
   footer .redes img {
     width: 60px; }
+
+@media screen and (max-width: 1024px) {
+  main .hero {
+    width: 100%;
+    height: 400px; }
+    main .hero div {
+      margin: 60px;
+      width: 40%; }
+      main .hero div h1 {
+        font-size: 40px; }
+      main .hero div p {
+        padding: 5px; }
+      main .hero div a {
+        font-size: 15px;
+        padding: 4px 40px 4px 40px; } }
+
+@media screen and (max-width: 850px) {
+  main .hero {
+    width: 100%;
+    height: 400px; }
+    main .hero div {
+      margin: 35px;
+      width: 45%; }
+      main .hero div h1 {
+        font-size: 30px; }
+      main .hero div p {
+        font-size: 15px; }
+      main .hero div a {
+        font-size: 13px;
+        padding: 4px 40px 4px 40px; }
+  main .servicios-main h2 {
+    font-size: 25px; }
+  main .servicios-main div h4 {
+    font-size: 18px; } }
+
+@media screen and (max-width: 740px) {
+  main {
+    /**------SOBRE-MI------*/ }
+    main .hero {
+      width: 100%;
+      height: 350px; }
+      main .hero div {
+        margin: 30px;
+        width: 47%; }
+        main .hero div h1 {
+          font-size: 25px; }
+        main .hero div p {
+          font-size: 15px; }
+        main .hero div a {
+          font-size: 14px;
+          padding: 5px 40px 5px 40px; }
+    main .servicios-tarjetas {
+      margin-top: 20px;
+      padding-bottom: 2cap;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      main .servicios-tarjetas div {
+        width: 150;
+        height: 250;
+        text-align: center;
+        margin: 5px;
+        padding: 10px;
+        display: inline-block; }
+    main .sobre-mi P {
+      font-size: 14PX; }
+    main .sobre-mi div {
+      width: 40%;
+      padding: 0px;
+      margin: 5px 0px 20px 5px; }
+      main .sobre-mi div img {
+        width: 230px;
+        padding: 5px 5px 5px 10px;
+        border-radius: 15px; } }
+
+@media screen and (max-width: 605px) {
+  main .hero div {
+    margin: 25px;
+    width: 47%; }
+    main .hero div h1 {
+      font-size: 25px; }
+    main .hero div p {
+      font-size: 14px; }
+    main .hero div a {
+      font-size: 14px;
+      padding: 5px 30px 5px 30px; }
+  main .servicios-main h2 {
+    font-size: 20px; }
+  main .sobre-mi P {
+    font-size: 12PX; }
+  main .sobre-mi div {
+    width: 40%;
+    padding: 0px;
+    margin: 5px 0px 20px 5px; }
+    main .sobre-mi div img {
+      width: 200px;
+      height: auto;
+      padding: 5px 5px 5px 10px;
+      border-radius: 15px; }
+  main .trabajos {
+    padding: 15px; }
+  main .grid-trabajos {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 200px;
+    gap: 6px; } }
+
+@media screen and (max-width: 535px) {
+  main .hero div {
+    margin: 25px;
+    width: 47%; }
+    main .hero div h1 {
+      font-size: 25px; }
+    main .hero div p {
+      font-size: 13px; }
+    main .hero div a {
+      font-size: 14px;
+      padding: 5px 30px 5px 30px; } }
+
+@media screen and (max-width: 430px) {
+  main {
+    /**------SOBRE-MI------*/ }
+    main .hero div {
+      margin: 7px;
+      width: 55%; }
+      main .hero div p {
+        font-size: 12px; }
+    main .sobre-mi {
+      display: block;
+      align-content: center;
+      text-align: center; }
+      main .sobre-mi P {
+        font-size: 12PX; }
+      main .sobre-mi div {
+        width: 90%;
+        padding: 0px;
+        margin-left: 20px; }
+        main .sobre-mi div img {
+          width: 150px;
+          padding: 5px;
+          border-radius: 10px; }
+    main .redes img {
+      width: 45px; }
+    main footer img {
+      width: 100px; } }
+
+/*@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
+}*/
+@media screen and (max-width: 600px) {
+  main .container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; }
+  main .box-info {
+    gap: 15px; }
+    main .box-info h1 {
+      font-size: 1.5rem; } }

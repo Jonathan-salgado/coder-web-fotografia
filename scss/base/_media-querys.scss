@@ -1,0 +1,273 @@
+@media screen and (max-width:1024px) {
+    main{
+        .hero {
+            width: 100%;
+            height: 400px;
+            div {
+                margin: 60px;
+                width: 40%;
+                h1 {
+                    font-size: 40px;
+                }
+                p {
+                    padding: 5px;
+                }
+                a {
+                    font-size: 15px;
+                    padding: 4px 40px 4px 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:850px) {
+    main{
+        .hero {
+        width: 100%;
+        height: 400px;
+        div {
+            margin: 35px;
+            width: 45%;
+            h1 {
+                font-size: 30px;
+            }
+            p {
+                font-size: 15px;
+            }
+            a {
+                font-size: 13px;
+                padding: 4px 40px 4px 40px;
+            }
+        }
+        }
+        .servicios-main {
+        h2 {
+            font-size: 25px;
+        }
+        div {
+            h4 {
+                font-size: 18px;
+            }
+        }
+        }
+    }
+}
+@media screen and (max-width:740px) {
+    main{
+        .hero {
+            width: 100%;
+            height: 350px;
+            div {
+                margin: 30px;
+                width: 47%;
+                h1 {
+                    font-size: 25px;
+                }
+                p {
+                    font-size: 15px;
+                }
+                a {
+                    font-size: 14px;
+                    padding: 5px 40px 5px 40px;
+                }
+            }
+        }
+        .servicios-tarjetas {
+            margin-top: 20px;
+            padding-bottom: 2cap;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            div {
+                width: 150;
+                height: 250;
+                text-align: center;
+                margin: 5px;
+                padding: 10px;
+                display: inline-block;
+            }
+        }
+        /**------SOBRE-MI------*/
+        .sobre-mi {
+            P {
+                font-size: 14PX;
+            }
+            
+            div {
+                width: 40%;
+                padding: 0px;
+                margin: 5px 0px 20px 5px;
+                img {
+                    width: 230px;
+                    padding: 5px 5px 5px 10px;
+                    border-radius: 15px;
+                }
+            }
+        }
+    }    
+}
+
+@media screen and (max-width:605px) {
+    main{
+        .hero {
+            div {
+                margin: 25px;
+                width: 47%;
+                h1 {
+                    font-size: 25px;
+                }
+                p {
+                    font-size: 14px;
+                }
+                a {
+                    font-size: 14px;
+                    padding: 5px 30px 5px 30px;
+                }
+            }
+        }
+        .servicios-main {
+            h2 {
+                font-size: 20px;
+            }
+        }
+        .sobre-mi {
+            P {
+                font-size: 12PX;
+            }
+            div {
+                width: 40%;
+                padding: 0px;
+                margin: 5px 0px 20px 5px;
+                img {
+                    width: 200px;
+                    height: auto;
+                    padding: 5px 5px 5px 10px;
+                    border-radius: 15px;
+                }
+            }
+        }
+        .trabajos {
+            padding: 15px;
+        }
+        .grid-trabajos {
+            margin: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-auto-rows: 200px;
+            gap: 6px;
+        }
+    }
+}
+
+@media screen and (max-width:535px) {
+    main{
+        .hero {
+            div {
+                margin: 25px;
+                width: 47%;
+                h1 {
+                    font-size: 25px;
+                }
+                p {
+                    font-size: 13px;
+                }
+                a {
+                    font-size: 14px;
+                    padding: 5px 30px 5px 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:430px) {
+    main{
+        .hero {
+            div {
+                margin: 7px;
+                width: 55%;
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+        /**------SOBRE-MI------*/
+        .sobre-mi {
+            display: block;
+            align-content: center;
+            text-align: center;
+            P {
+                font-size: 12PX;
+            }
+            
+            div {
+                width: 90%;
+                padding: 0px;
+                margin-left: 20px;
+                img {
+                    width: 150px;
+                    padding: 5px;
+                    border-radius: 10px;
+                }
+            }
+        }
+        .redes img {
+            width: 45px;
+        }
+        footer img {
+            width: 100px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
+}*/
+
+
+@media screen and (max-width:600px) {
+    main{
+        .container {
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    
+        .box-info {
+            gap: 15px;
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
