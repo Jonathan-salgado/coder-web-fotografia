@@ -148,67 +148,107 @@ main{
 
 main{
     .servicios-main{
-    P{
-        color: white;
-        text-align: justify;
-        margin: 30px 60px 30px 60px
+        P{
+            color: white;
+            text-align: justify;
+            margin: 30px 60px 30px 60px
+        }
     }
+    .modelos{
+        width: 100%;
+        height: 550px;
+        background-image: url(../img/trabajos01.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        p{
+            color:rgb(255, 255, 255);
+            width: 30%;
+            padding: 2px;
+        }
+        a{
+            background-color: $color-boton;
+            text-decoration: none;
+            color: white;
+            padding: 10px 30px 10px 30px;
+            border-radius: 15px;
+            margin: 10px 0px 0px 50px;
+        }
     }
+    .e-comerce-descrip{
+        width: 100%;
+        height: 550px;
+        background-image: url(../img/e-comerce.jpg);
+        background-position: bottom -12px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        p{
+            color:rgb(255, 255, 255);
+            width: 38%;
+            padding: 2px;
+        }
+        a{
+            background-color: $color-boton;
+            text-decoration: none;
+            color: white;
+            padding: 10px 30px 10px 30px;
+            border-radius: 15px;
+            margin: 10px 0px 0px 50px;
+        }
+    }
+    .bodas{
+        width: 100%;
+        height: 550px;
+        background-image: url(../img/novia-en-el-agua-catalina-tobon.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        p{
+            color:rgb(0, 0, 0);
+            width: 30%;
+            padding: 2px;
+        }
+        a{
+            background-color: $color-boton;
+            text-decoration: none;
+            color: white;
+            padding: 10px 30px 10px 30px;
+            border-radius: 15px;
+            margin: 10px 0px 0px 50px;
+        }
+    }
+    .quince{
+        width: 100%;
+        height: 550px;
+        background-image: url(../img/trabajos05.jpg);
+        background-position: bottom -12px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        p{
+            background-color: rgba(7, 7, 7, 0.301);
+            color:white;
+            width: 30%;
+            padding: 2px;
+        }
+        a{
+            background-color: $color-boton;
+            text-decoration: none;
+            color: white;
+            padding: 10px 30px 10px 30px;
+            border-radius: 15px;
+            margin: 10px 0px 0px 50px;
+        }
+    }
+}
 
-.bodas{
-    width: 100%;
-    height: 600px;
-    margin-top: 50px;
-    background-image: url(../img/novia-en-el-agua-catalina-tobon.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    p{
-        color:rgb(50, 50, 50);
-        margin: 30px 0px 0px 30px;
-        width: 35%;
-        font-size: 16px;
-    }
-    a{
-        background-color: $color-boton;
-        text-decoration: none;
-        color: white;
-        padding: 10px 30px 10px 30px;
-        border-radius: 15px;
-        margin: 20px 0px 0px 30px;
-        display: inline-block;
-    }
-}
-.modelos{
-    width: 100%;
-    height: 650px;
-    background-image: url(../img/trabajos01.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    p{
-        color:rgb(255, 255, 255);
-        background-color: rgba(0, 0, 0, 0.11);
-        margin: 15px 0px 0px 30px;
-        width: 30%;
-        padding: 2px;
-        font-size: 15px;
-    }
-    a{
-        background-color: $color-boton;
-        text-decoration: none;
-        color: white;
-        padding: 10px 30px 10px 30px;
-        border-radius: 15px;
-        margin: 10px 0px 0px 30px;
-        display: inline-block;
-    }
-}
-}
 
 //!-------CONTACTOS ------//
 
@@ -226,10 +266,10 @@ main{
         display:flex;
         flex-direction: column;
         gap:50px;
+        text-align: center;
     }
     
     .box-info > h1 {
-        text-align: left;
         letter-spacing: 5px;
     }
     
@@ -240,7 +280,7 @@ main{
     }
     
     .data > p {
-        font-size: 1rem;
+        font-size: 20px;
     }
     
     .data > p > i {
@@ -332,6 +372,20 @@ main{
     form > button:hover,
     .links > a:hover {
         background: rgb(172, 144, 16);
+    }
+
+    .input-selet{
+        width: 100%;
+        height: 40px;
+        padding: 0 10px;
+        color:#fff;
+        background: rgba(255, 255, 255, 0.089);
+        /*border:3px solid transparent;
+        letter-spacing: 1px;
+        outline:none;*/
+        transition:.3s;
+        align-content: center;
+        
     }
 }
 

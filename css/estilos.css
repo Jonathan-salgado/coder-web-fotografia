@@ -174,33 +174,9 @@ main .servicios-main P {
   text-align: justify;
   margin: 30px 60px 30px 60px; }
 
-main .bodas {
-  width: 100%;
-  height: 600px;
-  margin-top: 50px;
-  background-image: url(../img/novia-en-el-agua-catalina-tobon.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column; }
-  main .bodas p {
-    color: #323232;
-    margin: 30px 0px 0px 30px;
-    width: 35%;
-    font-size: 16px; }
-  main .bodas a {
-    background-color: rgba(87, 87, 87, 0.747);
-    text-decoration: none;
-    color: white;
-    padding: 10px 30px 10px 30px;
-    border-radius: 15px;
-    margin: 20px 0px 0px 30px;
-    display: inline-block; }
-
 main .modelos {
   width: 100%;
-  height: 650px;
+  height: 550px;
   background-image: url(../img/trabajos01.jpg);
   background-position: top;
   background-repeat: no-repeat;
@@ -209,19 +185,79 @@ main .modelos {
   flex-direction: column; }
   main .modelos p {
     color: white;
-    background-color: rgba(0, 0, 0, 0.11);
-    margin: 15px 0px 0px 30px;
     width: 30%;
-    padding: 2px;
-    font-size: 15px; }
+    padding: 2px; }
   main .modelos a {
     background-color: rgba(87, 87, 87, 0.747);
     text-decoration: none;
     color: white;
     padding: 10px 30px 10px 30px;
     border-radius: 15px;
-    margin: 10px 0px 0px 30px;
-    display: inline-block; }
+    margin: 10px 0px 0px 50px; }
+
+main .e-comerce-descrip {
+  width: 100%;
+  height: 550px;
+  background-image: url(../img/e-comerce.jpg);
+  background-position: bottom -12px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column; }
+  main .e-comerce-descrip p {
+    color: white;
+    width: 38%;
+    padding: 2px; }
+  main .e-comerce-descrip a {
+    background-color: rgba(87, 87, 87, 0.747);
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 15px;
+    margin: 10px 0px 0px 50px; }
+
+main .bodas {
+  width: 100%;
+  height: 550px;
+  background-image: url(../img/novia-en-el-agua-catalina-tobon.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column; }
+  main .bodas p {
+    color: black;
+    width: 30%;
+    padding: 2px; }
+  main .bodas a {
+    background-color: rgba(87, 87, 87, 0.747);
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 15px;
+    margin: 10px 0px 0px 50px; }
+
+main .quince {
+  width: 100%;
+  height: 550px;
+  background-image: url(../img/trabajos05.jpg);
+  background-position: bottom -12px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column; }
+  main .quince p {
+    background-color: rgba(7, 7, 7, 0.301);
+    color: white;
+    width: 30%;
+    padding: 2px; }
+  main .quince a {
+    background-color: rgba(87, 87, 87, 0.747);
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 15px;
+    margin: 10px 0px 0px 50px; }
 
 main .container {
   display: grid;
@@ -234,10 +270,10 @@ main .box-info {
   color: #fff;
   display: flex;
   flex-direction: column;
-  gap: 50px; }
+  gap: 50px;
+  text-align: center; }
 
 main .box-info > h1 {
-  text-align: left;
   letter-spacing: 5px; }
 
 main .data {
@@ -246,7 +282,7 @@ main .data {
   gap: 25px; }
 
 main .data > p {
-  font-size: 1rem; }
+  font-size: 20px; }
 
 main .data > p > i {
   color: #ac9010;
@@ -324,6 +360,18 @@ main form > button:hover,
 main .links > a:hover {
   background: #ac9010; }
 
+main .input-selet {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.089);
+  /*border:3px solid transparent;
+        letter-spacing: 1px;
+        outline:none;*/
+  transition: .3s;
+  align-content: center; }
+
 .fixed a img {
   width: 80px;
   position: fixed;
@@ -388,7 +436,37 @@ footer {
   main .servicios-main h2 {
     font-size: 25px; }
   main .servicios-main div h4 {
-    font-size: 18px; } }
+    font-size: 18px; }
+  main .modelos p {
+    color: white;
+    width: 35%;
+    padding: 2px;
+    margin: 30px 30px 30px 30px; }
+  main .e-comerce-descrip p {
+    color: white;
+    width: 40%;
+    padding: 2px;
+    margin: 30px 30px 30px 30px; }
+  main .bodas p {
+    color: black;
+    width: 35%;
+    padding: 2px;
+    margin: 30px 30px 30px 30px; }
+  main .quince p {
+    color: white;
+    width: 35%;
+    padding: 2px;
+    margin: 30px 30px 30px 30px; } }
+
+@media screen and (max-width: 775px) {
+  /**------CONTACTO------*/
+  main .input-selet {
+    width: 100%;
+    height: 60px;
+    padding: 0 10px;
+    align-content: center; }
+  main .data > p {
+    font-size: 15px; } }
 
 @media screen and (max-width: 740px) {
   main {
@@ -428,7 +506,24 @@ footer {
       main .sobre-mi div img {
         width: 230px;
         padding: 5px 5px 5px 10px;
-        border-radius: 15px; } }
+        border-radius: 15px; }
+    main .modelos p {
+      width: 37%;
+      padding: 0px;
+      margin: 20px 20px 20px 20px; }
+    main .e-comerce-descrip p {
+      width: 45%;
+      padding: 0px;
+      margin: 20px 20px 20px 20px; }
+    main .bodas p {
+      color: black;
+      width: 35%;
+      padding: 0px;
+      margin: 20px 20px 20px 20px; }
+    main .quince p {
+      width: 39%;
+      padding: 0px;
+      margin: 10px 20px 20px 20px; } }
 
 @media screen and (max-width: 605px) {
   main .hero div {
@@ -461,7 +556,63 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-rows: 200px;
-    gap: 6px; } }
+    gap: 6px; }
+  main .modelos p {
+    font-size: 14px;
+    width: 38%;
+    padding: -0px;
+    margin: 10px 10px 10px 10px; }
+  main .modelos a {
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+    margin: 5px 0px 0px 0px; }
+  main .e-comerce-descrip {
+    background-image: url(../img/trabajos09.jpg); }
+    main .e-comerce-descrip p {
+      font-size: 14px;
+      color: white;
+      width: 45%;
+      padding: 0px;
+      margin: 10px 10px 10px 10px; }
+    main .e-comerce-descrip a {
+      padding: 5px 15px 5px 15px;
+      border-radius: 10px;
+      margin: 5px 0px 0px 0px; }
+  main .bodas {
+    background-position: right;
+    background-position-x: +70%; }
+    main .bodas p {
+      font-size: 14px;
+      color: black;
+      width: 35%;
+      padding: 0px;
+      margin: 20px 20px 20px 20px; }
+    main .bodas a {
+      padding: 5px 15px 5px 15px;
+      border-radius: 10px;
+      margin: 5px 0px 0px 0px; }
+  main .quince p {
+    font-size: 14px;
+    width: 39%;
+    padding: 0px;
+    margin: 10px 20px 20px 20px; }
+  main .quince a {
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+    margin: 5px 0px 0px 0px; } }
+
+@media screen and (max-width: 600px) {
+  main .container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; }
+  main .box-info {
+    gap: 15px; }
+    main .box-info h1 {
+      font-size: 1.5rem; }
+  main .data > p {
+    font-size: 21px; } }
 
 @media screen and (max-width: 535px) {
   main .hero div {
@@ -497,40 +648,33 @@ footer {
           width: 150px;
           padding: 5px;
           border-radius: 10px; }
-    main .redes img {
-      width: 45px; }
-    main footer img {
-      width: 100px; } }
+    main .modelos p {
+      font-size: 13px;
+      width: 40%;
+      padding: 0px;
+      margin: 7px 10px 10px 10px; }
+    main .e-comerce-descrip p {
+      font-size: 13px;
+      width: 50%;
+      padding: 0px;
+      margin: 7px 10px 10px 10px; }
+    main .bodas p {
+      font-size: 13px;
+      color: black;
+      width: 40%;
+      padding: 0px;
+      margin: 20px 20px 20px 20px; }
+    main .quince p {
+      font-size: 13px;
+      width: 44%;
+      padding: 0px;
+      margin: 10px 20px 20px 20px; } }
 
-/*@keyframes shake {
-
-    0%,
-    100% {
-        transform: translateX(0);
-    }
-
-    10%,
-    30%,
-    50%,
-    70%,
-    90% {
-        transform: translateX(-10px);
-    }
-
-    20%,
-    40%,
-    60%,
-    80% {
-        transform: translateX(10px);
-    }
-}*/
-@media screen and (max-width: 600px) {
-  main .container {
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px; }
-  main .box-info {
-    gap: 15px; }
-    main .box-info h1 {
-      font-size: 1.5rem; } }
+@media screen and (max-width: 405px) {
+  footer div img {
+    width: 100px; }
+  footer div ul li a {
+    font-size: 8px;
+    padding: 0px; }
+  footer .redes img {
+    width: 40px; } }
